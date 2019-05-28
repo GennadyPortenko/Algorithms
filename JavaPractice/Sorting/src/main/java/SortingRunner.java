@@ -16,15 +16,13 @@ public class SortingRunner {
 
     private static int[] supplyArray() {
         int[] array = new int[20];
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++)
             array[i] = (int) (Math.random() * 100);
-        }
         return array;
     }
     private static void printArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.printf( "%3d ", array[i]);
-        }
+        for (int elem : array)
+            System.out.printf( "%3d ", elem);
         System.out.println();
     }
 }
