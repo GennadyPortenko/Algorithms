@@ -1,11 +1,13 @@
 import sorting.BubbleSorting;
 import sorting.InsertionSorting;
+import sorting.QuickSorting;
 import sorting.SortingAlgorithm;
 
 public class SortingRunner {
     public static void main(String... args) {
         // SortingAlgorithm algorithm = new InsertionSorting();
-        SortingAlgorithm algorithm = new BubbleSorting();
+        // SortingAlgorithm algorithm = new BubbleSorting();
+        SortingAlgorithm algorithm = new QuickSorting();
 
         System.out.println(algorithm.getName() + " : \n");
         int[] array = supplyArray();
