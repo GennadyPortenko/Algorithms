@@ -7,12 +7,14 @@ public class SortingRunner {
     public static void main(String... args) {
         // SortingAlgorithm algorithm = new InsertionSorting();
         // SortingAlgorithm algorithm = new BubbleSorting();
-        SortingAlgorithm algorithm = new QuickSorting();
+        // SortingAlgorithm algorithm = new QuickSorting();
+        QuickSorting algorithm = new QuickSorting();
 
         System.out.println(algorithm.getName() + " : \n");
         int[] array = supplyArray();
         printArray(array);
-        algorithm.sort(array);
+        // algorithm.sort(array);
+        algorithm.sort(array, 0);
         printArray(array);
     }
 
